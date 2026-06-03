@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        header {
+
+            background-color: #0d1117;
+            border: solid 1px rgb(36, 33, 119);
+            display: flex;
+            padding: 30px;
+            height: auto;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+            align-items: flex-end;
+        }
+
+        .info {
+            cursor: pointer;
+            font-weight: lighter;
+            font-size: 18px;
+            display: inline-block;
+            /* margin-right: 50px; */
+            transition-duration: 0.4s;
+            color: beige;
+            margin-right: 20px;
+        }
+
+        .info:hover {
+            background-color: grey;
+            border-radius: 10px;
+        }
+
+        .body {
+            height: auto;
+
+            background: linear-gradient(169deg,
+                    rgba(2, 0, 36, 1) 0%,
+                    rgba(9, 9, 121, 1) 35%,
+                    rgba(0, 212, 255, 1) 100%);
+            color: beige;
+            padding-bottom: 20px;
+        }
+
+        .name {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 41%, rgba(0, 212, 255, 1) 80%);
+            padding: 30px;
+
+        }
+
+        .details {
+            border: solid 1px rgb(36, 33, 119);
+            border-radius: 30px;
+            padding: 30px;
+            margin: 30px;
+            background: #020024;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 100%, rgba(3, 3, 61, 1) 100%, rgba(0, 212, 255, 1) 100%);
+            color: #e0e0e0;
+            /* off white */
+
+
+        }
+
+        .mainline {
+
+
+            color: #00d4ff;
+            margin-bottom: 20px;
+
+            font-size: 20px;
+            font-weight: lighter;
+
+        }
+
+        .skills {
+            border: solid 1px rgb(36, 33, 119);
+            border-radius: 30px;
+            padding: 30px;
+            margin: 30px;
+            background: #020024;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 100%, rgba(3, 3, 61, 1) 100%, rgba(0, 212, 255, 1) 100%);
+            color: #e0e0e0;
+            /* off white */
+
+
+
+        }
+
+
+        .html {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: stretch;
+            justify-content: space-between;
+
+        }
+
+        .perbar {
+            border: solid 1px;
+            height: 8px;
+            border-radius: 10px;
+
+            background-color: rgb(37, 37, 98);
+            margin-bottom: 10px;
+        }
+
+        .perinbar {
+            border: solid 1px;
+            height: 7px;
+            border-radius: 10px;
+            background-color: #00d4ff;
+            width: 85%;
+
+
+        }
+
+
+        .education {
+            border: solid 1px rgb(36, 33, 119);
+            border-radius: 30px;
+            padding: 30px;
+            margin: 30px;
+
+            background: #020024;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 100%, rgba(3, 3, 61, 1) 100%, rgba(0, 212, 255, 1) 100%);
+            color: #e0e0e0;
+            /* off white */
+
+
+
+        }
+
+        button {
+            border: solid 1px aqua;
+            width: 90px;
+            height: 30px;
+            border-radius: 20px;
+            background-color: rgba(0, 212, 255, 0.3);
+            color: aqua;
+            font-weight: 700px;
+            transition-duration: 0.4s;
+        }
+
+        button:hover {
+            background-color: rgba(0, 212, 255, 0.6);
+        }
+
+        .hobby {
+
+            border: solid 1px rgb(36, 33, 119);
+            border-radius: 30px;
+            padding: 30px;
+            margin: 30px;
+
+            background: #020024;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 100%, rgba(3, 3, 61, 1) 100%, rgba(0, 212, 255, 1) 100%);
+            color: #e0e0e0;
+            /* off white */
+        }
+
+        .carrer {
+
+            border: solid 1px rgb(36, 33, 119);
+            border-radius: 30px;
+            padding: 30px;
+            margin: 30px;
+            margin-bottom: 10px;
+
+            background: #020024;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 100%, rgba(3, 3, 61, 1) 100%, rgba(0, 212, 255, 1) 100%);
+            color: #e0e0e0;
+            /* off white */
+
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="position: sticky; top: 0;">
+
+        <header>
+            <div>
+                <h2 style=" color: cadetblue; font-weight: lighter; ">
+                    MyPortfolio
+                </h2>
+            </div>
+            <div style=" color: beige">
+                <a href="index.html">
+                    <h3 class="info active" >Home</h3>
+                </a>
+                <a href="about.html">
+                    <h3 class="info">About</h3>
+                </a>
+                <a href="project.html">
+                    <h3 class="info">Projects</h3>
+                </a>
+                <a href="contact.html">
+                    <h3 class="info">Contact</h3>
+                </a>
+            </div>
+
+        </header>
+    </div>
+
+
+
+    <div class="body">
+
+        <div class="name">
+            <div><img src="user.png" alt="user" width="80px"></div>
+            <div style="margin-left: 10px;">Aadarsha sunar <br>
+                BIT Student | Web Developer | Kathmandu, Nepal</div>
+
+        </div>
+
+        <!-- break -->
+
+
+
+        <!-- details -->
+
+        <div class="details">
+            <div class="mainline">Personal details
+                <hr style="color: #00d4ff;">
+            </div>
+
+
+            <div style="display: grid;  grid-auto-flow: column;">
+                <div style="width: 85%;">
+                    <p style="color: #a0c4ff; width: 100%;">Name</p>
+                    <p style="width: 100%;">Aadarsha Sunar</p>
+                </div>
+                <div style="width: 85%; margin-left: -71px;">
+                    <p style="color: #a0c4ff;  width: 100%; ">Age</p>
+                    <p style="width: 100%;">20 years</p>
+                </div>
+            </div>
+            <div style="display: grid;  grid-auto-flow: column;">
+                <div>
+                    <p style="color: #a0c4ff;">Location</p>
+                    <p>Kathmandu, Nepal</p>
+                </div>
+                <div>
+                    <p style="color: #a0c4ff;">Email</p>
+                    <p>adrshsnr767@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- break -->
+
+
+
+        <!-- skills -->
+
+        <div class="skills">
+            <div class="mainline">Skills
+                <hr style="color: #00d4ff;">
+            </div>
+
+
+            <!-- html -->
+            <div style="display: grid; grid-auto-flow: row; margin-bottom: 20px;">
+
+                <div>
+                    <div class="html">
+                        <div>HTML</div>
+                        <div>85%</div>
+
+
+                    </div>
+                    <div class="perbar">
+                        <div class="perinbar">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="html">
+                        <div>CSS</div>
+                        <div>55%</div>
+
+
+                    </div>
+                    <div class="perbar">
+                        <div class="perinbar" style="max-width: 55%;">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="html">
+                        <div>JavaScript</div>
+                        <div>5% </div>
+
+
+                    </div>
+                    <div class="perbar">
+                        <div class="perinbar" style="max-width: 5%;">
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+        <!-- break -->
+
+
+        <!-- education -->
+        <div class="education">
+            <div class="mainline">Education
+                <hr style="color: #00d4ff;">
+            </div>
+
+
+
+            <div style="display: grid; grid-auto-flow: row; margin-bottom: 20px;">
+
+
+                <div>
+                    <ul style="color: #00d4ff; margin-bottom: 10px;">
+                        <li style="color: beige;">
+
+                            BIT — XYZ College
+                        </li>
+                        <p>2026 – present</p>
+                    </ul>
+                </div>
+                <div>
+                    <ul style="color: #00d4ff; margin-bottom: 10px;">
+
+                        <li style="color: beige;">
+
+                            10+2 — National Integrated College
+                        </li>
+                        <p>2022 – 2024</p>
+                    </ul>
+                </div>
+                <div>
+                    <ul style="color: #00d4ff; margin-bottom: 10px;">
+                        <li style="color: beige;">
+
+                            Schooling — Orchid School
+                        </li>
+                        <p>2012 – 2022</p>
+                    </ul>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- break -->
+        <!-- hobbies -->
+
+        <div class="hobby">
+            <div class="mainline">Hobbies
+                <hr style="color: #00d4ff;">
+            </div>
+
+            <button>Coding</button>
+            <button>Gaming</button>
+            <button>Reading</button>
+            <button>Music</button>
+            <button>Travel</button>
+
+
+        </div>
+
+
+        <!-- break -->
+        <!-- creer goal -->
+
+        <div class="carrer">
+            <div class="mainline">Career Goals
+                <hr style="color: #00d4ff;">
+            </div>
+            <div style="font-weight: lighter; font-size: 20px;">
+                I want to become a full-stack web developer and build products that solve real problems for people in
+                Nepal and beyond.
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
