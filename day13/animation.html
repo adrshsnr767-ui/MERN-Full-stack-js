@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .movebox {
+            height: 250px;
+            width: 250px;
+            background-color: green;
+            /* transition: all 2s; */
+            animation-name: movebox;
+            animation-duration: 5s;
+
+            animation-iteration-count: infinite;
+        }
+
+        /* .movebox:hover{
+            margin-top:500px;
+
+        } */
+        /* @keyframes movebox {
+            from{
+                margin-top: 0;
+                background-color: aqua;
+            }
+            to{
+                margin-top: 500px;
+                background-color: black;
+            }
+         } */
+
+        @keyframes movebox {
+            0% {
+
+            }
+
+            25% {
+                margin-top: 0;
+                margin-left: 500px;
+
+
+            }
+
+            50% {
+                margin-left: 500px;
+                margin-top: 500px;
+
+
+
+
+            }
+
+            75% {
+                margin-top: 500px;
+                margin-left: 0;
+                /* margin-left: 500px; */
+                /* margin-right: 500px; */
+
+
+            }
+
+
+            100% {
+                /* margin-top: 500px;
+                margin-top: 500px; */
+
+
+                background-color: black;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    gsap for extreme animation
+
+    <div class="movebox">
+
+    </div>
+</body>
+
+</html>
