@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            margin: 05rem auto;
+            background-color: green;
+            height: 250px;
+            width: 250px;
+        }
+        .child{
+            background-color: lightblue;
+            height: 250px;
+            width: 250px;
+            transition: all 1s;
+            animation: animations;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function:linear;
+        }
+
+        /* .child:hover{
+            transform: rotate(45deg);
+        } */
+        @keyframes animations {
+            0%{
+                background-color: yellow;
+            }
+            100%{
+                /* transform: rotate(360deg); */
+                /* transform: rotateY(360deg); */
+                /* transform: scale(2); */
+                /* transform: skew(360deg); */
+                /* transform: translate(-200px); */
+                transform: translate(200px 150px);
+                transform: translateX(200px );
+                background-color: crimson;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">rotation of cild
+        </div>
+
+    </div>
+</body>
+</html>

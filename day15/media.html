@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(34, 130, 34);
+        }
+
+        /* landscape => width > height */
+        /* portrait => height > widht */
+        /* max-width , min-widht */
+        /* min-with=> starting poin for the css */
+        /* max-width => ending point of the css */
+        /* accordian */
+        @media  screen and (orientation: landscape) {
+            .container{
+                background-color: azure;
+            }
+            
+        }
+        @media (min-widht:768px) {
+            .container {
+                background-color: aqua;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+    </div>
+</body>
+
+</html>
